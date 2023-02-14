@@ -1,0 +1,35 @@
+================================================
+        ССПИ 11 : ICMPv4
+================================================
+
+ICMPv4 - Internet Control Message Protocol (IPv4), протокол открытого стандарта RFC-791, RFC-792.
+
+Заголовок:
+Type - 8 бит, тип сообщения.
+Code - 8 бит, код сообщения.
+CRC32 - чек-сумма
+
+Типом является некоторые виды сообщений, например
+8: Echo-request - пинг запрос
+0: Echo-reply - пинг ответ
+3: Destinantion unreacheable
+11: TTL Expired in transit
+
+Код является подтипом, например
+3: 0 - Network is unreacheable, сеть недостижима
+3: 1 - Host is unreacheable, хост недостижим
+3: 2 - Protocol is unreacheable, протокол недостижим/нераспознаный протокол
+3: 3 - Port is unreacheable, порт недостижим/заблокирован/порт отсутсвует
+3: 4 - PTB - packet too big
+
+jitter - разница со сердним
+
+ping (params)
+-t - 
+-n -
+-
+
+ping (no params)
+{
+    
+}
